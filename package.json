@@ -1,0 +1,29 @@
+{
+  "name": "products",
+  "version": "1.0.0",
+  "description": "product services for system design capstone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sno-sdc4-legolas/Products.git"
+  },
+  "author": "Matt Fitzgerald",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sno-sdc4-legolas/Products/issues"
+  },
+  "homepage": "https://github.com/sno-sdc4-legolas/Products#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "express-promise-router": "^4.1.1",
+    "mongoose": "^6.6.1",
+    "nodemon": "^2.0.20",
+    "pg": "^8.8.0",
+    "postgres": "^3.2.4"
+  }
+}

@@ -1,30 +1,20 @@
 const Router = require('express-promise-router');
 const { getAllProducts,
         getProductByID,
-        getStyles,
-        getFeatures,
-        getRelated,
-        getPhotos,
-        getSkus
-      } = require('./controller.js');
+        getStylesByProduct,
+        getRelated } = require('./controller.js');
 
 
 
 const router = new Router();
 
-router.get('/', getAllProducts);
+router.get(`/`, getAllProducts);
 
-router.get('/product_id', getProductByID);
+router.get(`/:product_id`, getProductByID);
 
-router.get('/styles', getStyles);
+router.get(`/:product_id/styles`, getStylesByProduct);
 
-router.get('/features', getFeatures);
-
-router.get('/related', getRelated);
-
-router.get('/photos', getPhotos);
-
-router.get('/skus', getSkus);
+router.get(`/:product_id/related`, getRelated);
 
 module.exports = router;
 
